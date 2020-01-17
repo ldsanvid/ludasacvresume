@@ -71,15 +71,7 @@ var trace0= {
     type: 'scatter',
   }
   
-  var trace6 = {
-    x: ['Encuesta de diciembre','Encuesta de febrero', "1° encuesta de marzo", "2° encuesta de marzo", "Encuesta de abril", "Resultado de la elección"],
-    y: [0, 1, 7, 12, 15, 18],
-    name:'Independiente',
-    marker: {color: 'rgba(122, 122, 122, 1)'},
-    type: 'scatter',
-  }
-  
-  var data3 = [trace4, trace5, trace6];
+  var data3 = [trace4, trace5];
   
   var layout3 = {
     title:'Seguimiento de encuestas y resultado final', yaxis:{title:"%"}
