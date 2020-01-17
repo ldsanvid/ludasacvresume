@@ -71,15 +71,7 @@ var trace5 = {
   type: 'scatter',
 }
 
-var trace6 = {
-  x: ['December poll','February poll', "March - 1° poll", "March - 2° poll", "April poll", "Election result"],
-  y: [0, 1, 7, 12, 15, 18],
-  name:'Independent',
-  marker: {color: 'rgba(122, 122, 122, 1)'},
-  type: 'scatter',
-}
-
-var data3 = [trace4, trace5, trace6];
+var data3 = [trace4, trace5];
 
 var layout3 = {
   title:'Poll Tracking and Election Result', yaxis:{title:"%"}
