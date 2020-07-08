@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
   </head>
   <body>
     <nav class="navbar navbar-dark bg-info text-white navbar-expand-md fixed-top">
@@ -37,7 +38,47 @@
           </div>
           <div class="row">
             <div class="col">
-              <h1 class="display-4 font-weight-normal"><strong>How does a country’s coordinates affect its level of wealth?</strong></h1>
+              <h1 class="display-4 font-weight-normal" style="text-align:justify"><strong>First Trump-AMLO summit: How strong is each other's position in their respective countries?</strong></h1>
+              <h5>An analysis of the position in which Donald Trump and Andrés Manuel López Obrador take their first in-person meeting.</h5>
+              <div id="plotpoll"></div>
+              <script src="plotencuesta.js"></script>
+              <div class="caption text-dark">
+                <h6><i>Source: <strong>Gallup</strong> (Trump's raiting), <strong>Consulta Mitofsky</strong> (AMLO's raiting).</i></h6>
+              </div>
+              <br>
+              <p style="text-align:justify">Despite it's difficult to find two heads of state with so many differences on their personalities and ruling style, the first ever in-person meeting between <strong>Andrés Manuel López Obrador</strong> and <strong>Donald Trump</strong> occurs at a time in which both presidents are going through similar moments.</p>
+              <br>
+              <p style="text-align:justify">Generally speaking, the <strong>AMLO administration</strong>, has faced many challenges even before the pandemic. Although the current violence crisis in the country did not began with AMLO, the figures show that his government's strategy to confront the problem has not been effective, with record breaking homicides related to drug cartels disputes.
+              On the economic side, AMLO promised an annual <strong>4% growth</strong> during his campaign, but the reality is that the mexican economy ended 2019 with a <strong>0.1% growth</strong>, almost in recession.
+            And on the <strong>fight against corruption</strong>, <strong>30%</strong> of people who had any contact with a public officer <strong>experienced a corruption act in 2019</strong>, according to the National Survey of Government Quality and Impact, <strong>a 5% increase</strong> from the previous measuerment.
+          Despite these negative results, <strong>AMLO's approval raiting before the pandemic</strong> shows that his personal style, characterized by its <strong>closeness (on a rhetorical level) to the most vulnerable sectors of the country</strong>, was mostly appreciated by a majority, marking a contrast with his predecessor, <strong>Enrique Peña Nieto</strong>.</p>
+              <br>
+              <p style="text-align:justify"><strong>The Trump Administration</strong>, despite the apparent state of continuous crisis, began its fourth year on a strong note. Trump was <strong>acquitted of all charges in his impeachment trial</strong>, which combined with a <strong>3.5% unemployement rate (a 50-year record low), a 28.9% growth in the stock market in 2019</strong>, a <strong>de-escalation of the crisis with Iran </strong>that left no victims on the american side, and an <strong>open race in the Democratic party</strong> for the election of the nominee for the november election with no clear favorite, placing him in the most favorable position he had been in his whole presidency.
+              Even though there were more people who disapproved his presidency than the ones who approved it before the pandemic, <strong>the margin of difference was very short</strong>, and thanks to the internal divisions in the Democratic party, <strong>his reelection prospects looked the strongest they have ever been</strong>.</p>
+              <br>
+              <p style="text-align:justify"><strong>Then, the pandemic</strong>. Both presidents had similar reactions to it, at first in late february and march, <strong>minimizing</strong> the crisis, then <strong>embracing</strong> the social distance narrative for a short while in april, <strong>then pivoting to the importance of reopening the economy</strong> in middle to late may, despite the COVID-19 cases and fatalities kept rising.</p>
+              <br>
+              <p style="text-align:justify">Trump was criticized at first for <strong>failing to act soon enough and then for his attempt to reopen the economy faster than recommended</strong>, while AMLO was criticized <strong>for failing to take countercyclical economic measures to ease the economic crisis</strong>. But, as the change in their approval raitings from april to may show, <strong>people in Mexico and the US gave their presidents a vote of confidence</strong>.</p>
+              <br>
+              <p style="text-align:justify"><strong>June changed everything for both presidents</strong>.</p>
+              <br>
+              <p style="text-align: justify">The tension towards structural racism and race inequality triggered by the murder of George Floyd caused weeks of social unrest in the US, while Trump's answer to it was to adopt a "law and order" message, which resounded with his base but alienated a wide majority of americans who saw it as insensitive and tone deaf, as his june approval raitings show. In AMLO's case, despite his efforts to change the narrative towards the 2021 midterm elections, the homicide rates, the corruption scandals in his cabinet, the exacerbation of the economic crisis and his government's uncapability to flatten the contagion curve, brought his approval raitings down.</p>
+              <br>
+              <p style="text-align:justify">This summit occurs at a time in which <strong>both presidents need a victory</strong>. Trump's reelection prospects look quite tough according to the polls, and AMLO knows that Mexico may be on the brink of an unprecedented crisis which, among other things, could steal from him the legislative majority he needs to keep implementing his program after the 2021 election.</p>
+              <br>
+              <p style="text-align:justify"><strong>Conclusion: the reality is that is unlikely that this summit does any real good to any of them.</strong></p>
+              <br> 
+              <p style="text-align: justify">Because of his past remarks about mexicans, <strong>Trump is widely unpopular in Mexico</strong>. The fact that <strong>AMLO's first meeting abroad in almost two years as president is with Trump </strong>and under his conditions while Trump is <strong>bragging about the border wall and trying to end the DREAM act</strong> (which protects undocumented youngsters, much of them mexican, who arrived to the US as little children), will undoubtedly have a negative impact on the Mexican president's base, despite the trade talk spin he is trying to make of this summit. Also, <strong>the fact that AMLO did not took any steps to reach out to any Democratic leader or the Democratic presidential nominee Joe Biden</strong> while in Washington, could potentially tense the relationship with him.</p>
+              <br>
+              <p style="text-align: justify">For Trump, <strong>this would probably have a quite low impact</strong>, seen only as an attempt to <strong>change the conversation by trying to place one of his main promises</strong>, which was to replace the NAFTA trade deal, <strong>as the center of attention</strong> while new COVID-19 cases spike in almost every state are driving the governors to suspend the reopenings.</p>
+            </div>
+          </div>
+          <hr>
+          <hr>
+          <hr>
+          <div class="row">
+            <div class="col">
+              <h1 class="display-4 font-weight-normal" style="text-align:justify"><strong>How does a country’s coordinates affect its level of wealth?</strong></h1>
               <h5>An analysis to determine if, besides humans' input and actions, does a country's coordinates cast an influence on its wealth/poverty level.<br><br>Process</h5>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item"><strong>1.-</strong> Downloaded and cleaned several datasets reflecting different aspects of a country.</li>
