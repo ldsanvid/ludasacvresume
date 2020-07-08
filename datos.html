@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>   
   </head>
 <body>
     <nav class="navbar navbar-dark bg-info text-white navbar-expand-md fixed-top">
@@ -38,7 +39,48 @@
           </div>
           <div class="row">
             <div class="col">
-              <h1 class="display-4 font-weight-normal"><strong>¿Qué tanto influyen las coordenadas de un país en su nivel de riqueza o pobreza?</strong></h1>
+              <h1 class="display-4 font-weight-normal" style="text-align:justify"><strong>Primera cumbre Trump-AMLO: ¿Qué tan fuerte es la posición de cada uno?</strong></h1>
+              <h5>Un análisis sobre cómo llegan Donald Trump y Andrés Manuel López Obrador a su primera reunión en persona.</h5>
+              <div id="plotencuesta"></div>
+              <script src="plotencuesta2.js"></script>
+              <div class="caption text-dark">
+                <h6><i>Fuente: <strong>Gallup</strong> (en el caso de Trump), <strong>Consulta Mitofsky</strong> (en el caso de AMLO).</i></h6>
+              </div>
+              <br>
+              <p style="text-align:justify">A pesar de que es difícil encontrar a dos jefes de estado con personalidades y estilos de gobernar tan diferentes, la primera reunión en persona de <strong>Andrés Manuel López Obrador</strong> y <strong>Donald Trump</strong> ocurre en un momento en el que ambos presidentes están pasando por momentos similares.</p>
+              <br>
+              <p style="text-align:justify">En términos generales, la <strong>administración de AMLO</strong> ha enfrentado muchos retos aún antes de la pandemia. Aunque la actual crisis de violencia que vive el país no empezó con AMLO, las cifras demuestran que la estrategia de su gobierno para confrontar el problema no ha sido efectiva, con cifras record en homicidios relacionados con disputas entre cárteles de narcotráfico.
+              En la parte económica, AMLO prometió un <strong>crecimiento de 4%</strong> anual durante su campaña, pero la realidad es que la economía mexicana terminó 2019 con un crecimiento de <strong>apenas 0.1%</strong>, es decir, casi una recesión.
+            Y en la <strong>lucha contra la corrupción</strong>, <strong>30%</strong> de la gente que tuvo contacto con un servidor público <strong>experimentó un acto de corrupción en 2019</strong>, de acuerdo a la Encuesta Nacional de Calidad e Impacto Gubernamental del INEGI, <strong>un incremento de 5%</strong> en comparación con la medición anterior.
+          A pesar de los resultados negativos, <strong>los niveles de aprobación de AMLO antes de la pandemia</strong> muestran que su estilo personal, caracterizado por su<strong> cercanía (a nivel retórico) con los sectores más vulnerables del país</strong>, fue apreciado por una mayoría de la población, marcando un claro contraste con su predecesor, <strong>Enrique Peña Nieto</strong>.</p>
+              <br>
+              <p style="text-align:justify"><strong>La administración Trump</strong>, a pesar de su aparente estado de crisis continua, empezó su cuarto año con fuerza. Trump fue <strong>absuelto de todos los cargos en su juicio político</strong>, lo cual se combinó con un <strong>3.5% de población desempleada (mínimo histórico de 50 años), un crecimiento de 28.9% en el mercado de valores en 2019</strong>, una <strong>desescalada de la crisis con Irán </strong>que no dejó víctimas del lado americano, y una <strong>carrera abierta dentro del partido Demócrata</strong> para la elección de un candidato de cara a la elección de noviembre sin ningún claro favorito, situándolo en la posición más favorable en la que ha estado desde que inició su presidencia.
+              Aunque había más gente que desaprobaba su presidencia que aquellos que la aprobaban antes de la pandemia, <strong>el margen de diferencia era muy corto</strong>, y gracias a las divisiones internas en el partido Demócrata, <strong>sus perspectivas de reelección se veían más fuertes que nunca</strong>.</p>
+              <br>
+              <p style="text-align:justify"><strong>Después llegó la pandemia</strong>. Ambos presidentes reaccionaron de forma similar a finales de febrero y principios de marzo, <strong>minimizando</strong> la crisis, para después <strong>asumir</strong> la narrativa de distancia social por un tiempo en abril, <strong>y luego abanderar la causa de la reapertura económica</strong> a mediados y finales de mayo, a pesar de que los casos de contagio y defunciones por COVID-19 iban a la alza.</p>
+              <br>
+              <p style="text-align:justify">Trump fue criticado al principio por <strong>no actuar lo suficientemente rápido y después por sus presiones para reabrir la economía antes de lo rcomendado</strong>, mientras que AMLO fue criticado por <strong>no adoptar medidas económicas contracíclicas para atenuar la crisis económica</strong>. Pero como lo muestran los cambios en los niveles de aprobación de abril a mayo, <strong>la gente en México y en Estados Unidos le dio a sus presidentes un voto de confianza</strong>.</p>
+              <br>
+              <p style="text-align:justify"><strong>Junio cambió todo para ambos presidentes</strong>.</p>
+              <br>
+              <p style="text-align: justify">La tensión hacia el racismo estructural y la desigualdad racial detonada por el asesinato de George Floyd causó semanas de malestar social en Estados Unidos, mientras que la respuesta de Trump fue adoptar un mensaje de "ley y orden", que resonó con su base de votantes pero alienó a una mayoría de estadounidenses, que lo vieron como insensible y fuera de tono. En el caso de AMLO, a pesar de sus esfuerzos de enfocar la narrativa en las elecciones intermedias de 2021, las tasas de homicidio, los escándalos de corrupción en su gabinete, la agudización de la crisis económica y la incapacidad de su gobierno de aplanar la curva de contagios, llevó sus niveles de aprobación hacia abajo.</p>
+              <br>
+              <p style="text-align:justify">Esta reunión ocurre en un momento en el que <strong>ambos presidentes necesitan una victoria</strong>. De acuerdo a las encuestas, las posibilidades de reelección de Trump se ven distantes, y AMLO sabe que México podría estar al borde de una crisis sin precedentes que, entre otras cosas, le robarían la mayoría legislativa que necesita para continuar implementando su programa de gobierno después de la elección de 2021.</p>
+              <br>
+              <p style="text-align:justify"><strong>Conclusión: la realidad es que es poco probable que esta reunión genere algún bien significativo a cualquiera de los dos.</strong></p>
+              <br> 
+              <p style="text-align: justify">Debido a sus declaraciones pasadas sobre mexicanos, <strong>Trump es ampliamente impopular en México</strong>. El hecho de que <strong>la primera reunión de AMLO en el extranjero en casi dos años como presidente sea con Trump </strong>bajo las condiciones que éste impuso, mientras Trump está <strong>presumiendo el muro fronterizo e intentando acabar con el programa DACA</strong> (que protege a jóvenes indocumentados, muchos de ellos mexicanos, que llegaron a Estados Unidos siendo niños pequeños), sin duda tendrá un efecto negativo en la base del presidente mexicano, a pesar del enfoque comercial que se le busca dar a esta reunión. También, <strong>el hecho de que AMLO no realizó acercamientos con liderazgos del partido Demócrata ni con su candidato presidencial Joe Biden</strong> mientras está en Washington, podría potencialmente tensar su relación con él.</p>
+              <br>
+              <p style="text-align: justify">Para Trump, <strong>ésto probablemente tendrá un impacto muy bajo</strong>, visto como un intento por <strong>cambiar la conversación al tratar de posicionar una de sus principales promesas</strong>, que fue reemplazar el acuerdo comercial del TLCAN, <strong>en el centro de atención</strong> mientras que nuevos casos de COVID-19 en casi todos los estados están llevando a los gobernadores a suspender las reaperturas.</p>
+            </div>
+            </div>
+          </div>
+            <hr>
+            <hr>
+            <hr>
+          <div class="row">
+            <div class="col">
+              <h1 class="display-4 font-weight-normal" style="text-align:justify"><strong>¿Qué tanto influyen las coordenadas de un país en su nivel de riqueza o pobreza?</strong></h1>
               <h5>Un análisis para determinar si, además de las acciones humanas, las coordenadas de un país ejercen influencia en su nivel de riqueza o pobreza.<br><br>Proceso</h5>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item"><strong>1.-</strong> Descarga y limpieza de múltiples bases de datos reflejando diferentes aspectos de un país.</li>
