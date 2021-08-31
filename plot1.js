@@ -50,24 +50,24 @@ var trace2 = {
 
 var data = [trace1, trace2];
 
-var layout = {barmode: 'stack', title:'2019 Presidential Election', xaxis:{title: 'Candidates'}, yaxis: {
+var layout = {barmode: 'stack', title:'2019 Presidential election', xaxis:{title: 'Parties'}, yaxis: {
   title: 'Voting %'}}
 
 Plotly.newPlot('plot2', data, layout);
 
 var trace4 = {
-  x: ['December poll','February poll', "March - 1° poll", "March - 2° poll", "April poll", "Election result"],
-  y: [20, 24, 25, 26, 27, 30],
-  name:'Cambio Democrático',
-  marker: {color: 'rgba(0, 168, 163, 1)'},
+  x: ['December poll','February poll', "March poll", "April poll", "May poll", "Election result"],
+  y: [38, 38, 39, 42, 47, 53],
+  name:'PAN-PRI-PRD',
+  marker: {color: 'rgba(57, 51, 228, 1)'},
   type: 'scatter',
 }
 
 var trace5 = {
-  x: ['December poll','February poll', "March - 1° poll", "March - 2° poll", "April poll", "Election result"],
-  y: [52, 48, 44, 39, 36, 33],
-  name:'PRD',
-  marker: {color: 'rgba(245, 0, 0, 1)'},
+  x: ['December poll','February poll', "March poll", "April poll", "May poll", "Election result"],
+  y: [36, 38, 36, 35, 32, 32],
+  name:'Morena',
+  marker: {color: 'rgba(142, 35, 35, 1)'},
   type: 'scatter',
 }
 
@@ -80,14 +80,30 @@ var layout3 = {
 Plotly.newPlot('plot3', data3, layout3)
 
 var trace7 = {
-  x: [8,17],
-  y: ['Last poll', 'Result'],
-  mode: 'markers',
-  marker: {
-    size:[40,90], color: 'rgba(245, 147, 0, 1)'}
-};
+  x: ['December poll','February poll', "March poll", "April poll", "May poll", "Election result"],
+  y: [33, 35, 34, 38, 42, 44],
+  name:'PAN',
+  marker: {color: 'rgba(57, 51, 228, 1)'},
+  type: 'scatter',
+}
 
-var data4 = [trace7];
+var trace8 = {
+  x: ['December poll','February poll', "March poll", "April poll", "May poll", "Election result"],
+  y: [23, 21, 24, 20, 21, 22],
+  name:'Morena',
+  marker: {color: 'rgba(142, 35, 35, 1)'},
+  type: 'scatter',
+}
+
+var trace9 = {
+  x: ['December poll','February poll', "March poll", "April poll", "May poll", "Election result"],
+  y: [24, 22, 22, 23, 24, 25],
+  name:'PRI-PRD',
+  marker: {color: 'rgba(20, 157, 25, 1)'},
+  type: 'scatter',
+}
+
+var data4 = [trace7, trace8, trace9];
 
 var layout4 = {
   title:'Poll Tracking and Election Result', yaxis:{title:"%"}
