@@ -56,18 +56,18 @@ var trace0= {
   Plotly.newPlot('plot2', data, layout);
   
   var trace4 = {
-    x: ['Encuesta de diciembre','Encuesta de febrero', "1° encuesta de marzo", "2° encuesta de marzo", "Encuesta de abril", "Resultado de la elección"],
-    y: [20, 24, 25, 26, 27, 30],
-    name:'Cambio Democrático',
-    marker: {color: 'rgba(0, 168, 163, 1)'},
+    x: ['Encuesta de diciembre','Encuesta de febrero', "Encuesta de de marzo", "Encuesta de abril", "Encuesta de mayo", "Resultado de la elección"],
+    [38, 38, 39, 42, 47, 52],
+    name:'PAN-PRI-PRD',
+    marker: {color: 'rgba(57, 51, 228, 1)'},
     type: 'scatter',
   }
   
   var trace5 = {
-    x: ['Encuesta de diciembre','Encuesta de febrero', "1° encuesta de marzo", "2° encuesta de marzo", "Encuesta de abril", "Resultado de la elección"],
-    y: [52, 48, 44, 39, 36, 33],
-    name:'PRD',
-    marker: {color: 'rgba(245, 0, 0, 1)'},
+    x: ['Encuesta de diciembre','Encuesta de febrero', "Encuesta de de marzo", "Encuesta de abril", "Encuesta de mayo", "Resultado de la elección"],
+    y: [36, 38, 36, 35, 32, 32],
+    name:'Morena',
+    marker: {color: 'rgba(142, 35, 35, 1)'},
     type: 'scatter',
   }
   
@@ -80,17 +80,33 @@ var trace0= {
   Plotly.newPlot('plot3', data3, layout3)
   
   var trace7 = {
-    x: [8,17],
-    y: ['Encuesta', 'Resultado'],
-    mode: 'markers',
-    marker: {
-      size:[40,90], color: 'rgba(245, 147, 0, 1)'}
-  };
-  
-  var data4 = [trace7];
-  
-  var layout4 = {
-    title:'Seguimiento de encuestas y resultado final', yaxis:{title:"%"}
-  };
-  
-  Plotly.newPlot('plot4', data4, layout4)
+  x: ['Encuesta de diciembre','Encuesta de febrero', "Encuesta de de marzo", "Encuesta de abril", "Encuesta de mayo", "Resultado de la elección"],
+  y: [33, 35, 34, 38, 42, 44],
+  name:'PAN',
+  marker: {color: 'rgba(57, 51, 228, 1)'},
+  type: 'scatter',
+}
+
+var trace8 = {
+  x: ['Encuesta de diciembre','Encuesta de febrero', "Encuesta de de marzo", "Encuesta de abril", "Encuesta de mayo", "Resultado de la elección"],
+  y: [23, 21, 24, 20, 21, 22],
+  name:'Morena',
+  marker: {color: 'rgba(142, 35, 35, 1)'},
+  type: 'scatter',
+}
+
+var trace9 = {
+  x: ['Encuesta de diciembre','Encuesta de febrero', "Encuesta de de marzo", "Encuesta de abril", "Encuesta de mayo", "Resultado de la elección"],
+  y: [24, 22, 22, 23, 24, 25],
+  name:'PRI-PRD',
+  marker: {color: 'rgba(20, 157, 25, 1)'},
+  type: 'scatter',
+}
+
+var data4 = [trace7, trace8, trace9];
+
+var layout4 = {
+  title:'Seguimiento de encuestas y resultado final', yaxis:{title:"%"}
+};
+
+Plotly.newPlot('plot4', data4, layout4)
