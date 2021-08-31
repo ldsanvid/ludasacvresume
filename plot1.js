@@ -57,7 +57,7 @@ Plotly.newPlot('plot2', data, layout);
 
 var trace4 = {
   x: ['December poll','February poll', "March poll", "April poll", "May poll", "Election result"],
-  y: [38, 38, 39, 42, 47, 53],
+  y: [38, 38, 39, 42, 47, 52],
   name:'PAN-PRI-PRD',
   marker: {color: 'rgba(57, 51, 228, 1)'},
   type: 'scatter',
